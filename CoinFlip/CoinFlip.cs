@@ -7,7 +7,7 @@ namespace CoinFlip
 {
     public class CoinFlip : Plugin
     {
-        public override string Developer => "KoToXleB#4663";
+        public override string Developer => "KoT0XleB#4663";
         public override string Name => "CoinFlip";
         public override Version Version => new Version(1, 0, 0);
         public override int Priority => int.MinValue;
@@ -33,8 +33,8 @@ namespace CoinFlip
         {
             Timing.CallDelayed(CustomConfig.Delay, () =>
             {
-                if (UnityEngine.Random.Range(0, 2) == 0) ev.Player.ShowHint($"{CustomConfig.Result}: {CustomConfig.FirstCoin}", CustomConfig.DelayBroadcast);
-                else ev.Player.ShowHint($"{CustomConfig.Result}: {CustomConfig.SecondCoin}", CustomConfig.DelayBroadcast);
+                if (UnityEngine.Random.Range(0, 2) == 0) ev.Player.ShowHint($"{CustomConfig.Result}{CustomConfig.FirstCoin}", CustomConfig.DelayBroadcast);
+                else ev.Player.ShowHint($"{CustomConfig.Result}{CustomConfig.SecondCoin}", CustomConfig.DelayBroadcast);
             });
         }
     }
