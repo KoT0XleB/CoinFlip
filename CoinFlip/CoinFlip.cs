@@ -29,12 +29,12 @@ namespace CoinFlip
 
             Qurre.Events.Player.CoinFlip -= OnCoinFlip;
         }
-        public static void OnCoinFlip(CoinFlipEvent ev)
+        public void OnCoinFlip(CoinFlipEvent ev)
         {
             Timing.CallDelayed(CustomConfig.Delay, () =>
             {
-                if (UnityEngine.Random.Range(0, 2) == 0) ev.Player.ShowHint($"{CustomConfig.Result}{CustomConfig.FirstCoin}", CustomConfig.DelayBroadcast);
-                else ev.Player.ShowHint($"{CustomConfig.Result}{CustomConfig.SecondCoin}", CustomConfig.DelayBroadcast);
+                if (ev.Tails) ev.Player.ShowHint(CustomConfig.Result + CustomConfig.FirstCoin, CustomConfig.DelayBroadcast);
+                else ev.Player.ShowHint(CustomConfig.Result + CustomConfig.SecondCoin, CustomConfig.DelayBroadcast);
             });
         }
     }
