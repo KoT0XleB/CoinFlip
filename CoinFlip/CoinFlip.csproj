@@ -32,15 +32,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\..\Рабочий стол\файлы\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\файлы\Qurre\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="Qurre">
-      <HintPath>..\..\..\..\Рабочий стол\файлы\Qurre\Qurre.dll</HintPath>
+    <Reference Include="Assembly-CSharp_publicized">
+      <HintPath>..\..\..\файлы\Qurre\Assembly-CSharp_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="DissonanceVoip">
+      <HintPath>..\..\..\файлы\DissonanceVoip.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\..\..\файлы\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="Qurre, Version=1.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\файлы\Qurre\Qurre.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Рабочий стол\файлы\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\файлы\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
